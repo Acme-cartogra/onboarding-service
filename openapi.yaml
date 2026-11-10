@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  title: "onboarding-service"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8105"
+paths:
+  "/onboardings":
+    get:
+      summary: "List onboardings"
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: "Create onboarding"
+      responses:
+        "200":
+          description: OK
+  "/onboardings/{id}":
+    get:
+      summary: "Get onboarding by ID"
+      responses:
+        "200":
+          description: OK
